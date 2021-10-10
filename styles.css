@@ -5,17 +5,19 @@
 }
 
 :root {
-    --black-bg: #1f2124;
-    --black: #000;
+    --primary-bg: #1f2124;
+    --secondary-ft: #000;
     --blue-logo: #4285f4;
-    --yellow-bg: #FDD663;
-    --white: #fff;
+    --secondary-bg: #FDD663;
+    --primary-ft: #fff;
+    --timeline-bg: #1f2124;
+    --grey-black: #E2E2E2;
 }
 
 body {
-    background: var(--black-bg);
+    background: var(--primary-bg);
     font-family: "Open Sans", sans-serif;
-    color: var(--white);
+    color: var(--primary-ft);
 }
 a{
     text-decoration: none;
@@ -38,7 +40,7 @@ a{
 .logo_name {
     display: flex;
     align-items: center;
-    color: var(--white);
+    color: var(--primary-ft);
 }
 
 .logo_name>h2:nth-child(odd) {
@@ -59,7 +61,7 @@ a{
 
 .navbar_menu>li>a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--primary-ft);
     font-size: 16px;
     font-weight: 500;
 }
@@ -76,7 +78,7 @@ a{
 }
 
 .navbar_apply>li>a {
-    color: var(--white);
+    color: var(--primary-ft);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -116,7 +118,7 @@ a{
 /*AboutUS Heading*/
 
 .aboutus_heading {
-    color: var(--white);
+    color: var(--primary-ft);
     margin-bottom: 3.5rem;
     text-align: center;
     /*replace this with "text-align: left;" if don't want heading in center*/
@@ -137,9 +139,9 @@ a{
 /*--info card*/
 
 .aboutus_card_content {
-    background: var(--yellow-bg);
+    background: var(--secondary-bg);
     padding: 3rem;
-    color: var(--black);
+    color: var(--secondary-ft);
     border-radius: 12px;
     display: flex;
     height: 256px;
@@ -248,14 +250,14 @@ Wellcome Page
   #know-how {
     left: 80px;
     top: 527px;
-    background: var(--yellow-bg);
+    background: var(--secondary-bg);
     /* padding-top: 10px; */
     display: flex;
     align-items: center;
   }
 
   #text-box{
-      color: var(--black);
+      color: var(--secondary-ft);
   }
   
   #text-box > span {
@@ -291,6 +293,7 @@ Wellcome Page
   }
   
   #vid-title {
+    color: white;
     width: 350px;
     position: absolute;
     height: 20px;
@@ -316,8 +319,8 @@ Wellcome Page
   #hero-line {
     height: 0px;
     margin: 2rem 5rem 6rem 5rem;
-    border: 1px solid #E2E2E2;
-    background-color: #E2e2e2;
+    border: 1px solid var(--primary-ft);
+    background-color: var(--primary-bg);
   }
   /*# sourceMappingURL=hero.css.map */
 
@@ -360,10 +363,10 @@ Wellcome Page
     
     width: 400px;
     /*height: 480px;*/
-    background-color: var(--yellow-bg);
+    background-color: var(--secondary-bg);
     border-radius: 12px;
     padding: 40px 72px 40px 40px;
-    color: #000000;
+    color: var(--secondary-ft);
 
 }
 
@@ -408,19 +411,28 @@ span.greater-than{
 
 .upper-footer{
     display: flex;
+    margin-top: 90px;
     justify-content: space-between;
     align-items: center;
+}
+
+#theme:hover{
+    cursor: pointer;
 }
 
 .upper-footer div{
-    margin: 72px;
+    margin: 40px 72px 72px;
 }
 
 .lower-footer{
-    margin: 0 72px 50px;
+    padding: 0 72px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer{
+    background-color: #1f2124;
 }
 
 .horizontal-list{
@@ -465,7 +477,7 @@ How it works
 }
 .lrn{
     font-size: 20px;
-    color: #E2E2E2;
+    color: var(--grey-black);
 }
 
 .bx-container{
@@ -475,7 +487,7 @@ How it works
 }
 
 .bx-1{
-    border: 2px solid rgba(255, 255, 255, 1);
+    border: 2px solid var(--primary-ft);
     width: 393px;
     padding: 15px;
     border-radius: 10px;
@@ -497,13 +509,13 @@ How it works
     width: 275px;
     margin-top: 32px;
     margin-bottom: 15px;
-    color: #E2E2E2;
+    color: var(--grey-black);
     font-size: 19px;
 }
 
 .btm{
     margin: 2rem 5rem;
-    color: #E2E2E2;
+    color: var(--grey-black);
     width: 300px;
 }
 
@@ -536,7 +548,7 @@ Timeline
     height: 7px;
     border: none;
     border-radius: 12px;
-    background-color: var(--yellow-bg);
+    background-color: var(--secondary-bg);
     top: 50%;
     transform: translateY(-50%);
 }
@@ -557,7 +569,7 @@ Timeline
     height: 155px;
     border-radius: 12px;
     border: 1px solid #F8F9FA;
-    background-color: var(--black-bg);
+    background-color: var(--timeline-bg);
     padding: 11px;
     display: flex;
     flex-direction: column;
@@ -565,9 +577,9 @@ Timeline
 }
 
 .gold-box {
-    background-color: var(--yellow-bg);
+    background-color: var(--secondary-bg);
     border: none;
-    color: var(--black);
+    color: var(--secondary-ft);
     height: 170px;
 }
 
@@ -603,7 +615,7 @@ Timeline
         position: absolute;
         height: 100%;
         width: 7px;
-        background-color: var(--yellow-bg);
+        background-color: var(--secondary-bg);
         top: 50%;
         transform: translateY(-50%);
     }
@@ -637,7 +649,7 @@ Timeline
         line-height: 18px;
     }
     .gold-box {
-        background-color: var(--yellow-bg);
+        background-color: var(--secondary-bg);
         height: 140px;
     }
     .timeline-box .date {
@@ -649,7 +661,7 @@ Timeline
         position: absolute;
         height: 100%;
         width: 4px;
-        background-color: var(--yellow-bg);
+        background-color: var(--secondary-bg);
         top: 50%;
         transform: translateY(-50%);
     }
@@ -717,7 +729,7 @@ Sponsors
 
 }
 .sponsor-img-wrap {
-    background: white;
+    background: #F8F9FA;
     padding: 10px;
     border-radius: 100px;
 }
