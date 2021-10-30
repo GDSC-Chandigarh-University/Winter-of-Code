@@ -21,7 +21,7 @@
                 flex-direction: column;
                 gap: 20px
             }
-            #CUWOC-video > iframe {
+            #CUWOC-video > .CUWOC-img-1 {
                 width: 100% !important
             }
             #CUWOC-video > div {
@@ -31,16 +31,18 @@
                 margin-left: 30px !important;
                 margin-right: 30px !important;
             }
+            .CUWOC-DIV-1 {
+                margin-top: 0px !important;
+            }
         }
     </style>
     <article
         style="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap'); font-family: 'Open Sans', sans-serif; background: #FAFAFA;">
         <section style="max-width: 716px; margin: auto; background: white;">
             <div
-                style="background: url('https://github.com/GDSC-Chandigarh-University/Winter-of-Code/blob/master/images/GDSC-Header.jpg?raw=true'); height: 160px; display: flex; align-items: center; justify-content: center;">
-                <img src="./dsc_logo.svg" />
+                style="background: url('https://github.com/GDSC-Chandigarh-University/Winter-of-Code/blob/master/CUWOC/GDSC-Header.png?raw=true'); height: 160px; display: flex; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat;">
             </div>
-            <div class="CUWOC-DIV" style="margin: 60px 80px 0px;">
+            <div class="CUWOC-DIV CUWOC-DIV-1" style="margin: 60px 80px 0px;">
                 <span style="font-size: 36px; font-weight: 600; line-height: 45.8px;">Winter of Code</span>
                 <span style="font-size: 24px; font-weight: 600; line-height: 30.5px;">is here!</span>
                 <p style="margin-top: 13px; font-size: 18px; font-weight: 600; line-height: 23px;">A month long coding
@@ -49,11 +51,15 @@
                 </p>
             </div>
             <div class="CUWOC-DIV" id="CUWOC-video" style="display: flex; align-items: stretch; margin: 28px 80px 0px;">
-                <div style="display: flex; flex-direction: column; justify-content: center; background: #4285F4; width: 60%; height: 125px; border-radius: 12px; margin-right: 15px; color: white; padding: 22px;">
+                <div style="display: flex; flex-direction: column; justify-content: center; background: #4285F4; width: 60%; height: 95px; border-radius: 12px; margin-right: 15px; color: white; padding: 22px;">
                     <p style="font-size: 24px; font-weight: 700; line-height: 30.5px; margin: 0;">Know how it works</p>
-                    <p style="font-size: 13px; font-weight: 700; line-height: 16.5px; margin: 0; margin-top: 8px;">Get complete steps to understand, <br/> how Google DSC CU Winter of Code works. <br/> Know about it</p>
+                    <p style="font-size: 13px; font-weight: 700; line-height: 16.5px; margin: 0; margin-top: 8px;">Get complete steps to understand, <br/> how Google DSC CU Winter of Code works. <br/><a style="text-decoration: none; color: white;" href="https://woc.gdsccu.tech" target="_blank">Know about it</a></p>
                 </div>
-                    <iframe width="40%" height="170px" style="border-radius: 12px;" src="https://www.youtube.com/embed/mSGgxYzNQPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="CUWOC-img-1" style="width: 40%; position: relative;">
+                    <a href="https://bit.ly/gdsccu-woc-yt-about" target="_blank"><img style="height: 140px; width: 100%; border-radius: 12px; object-fit: cover;" src="./WOC-video.png"/></a>
+                    <a href="https://bit.ly/gdsccu-woc-yt-about" target="_blank"><img style="position: absolute; top: 25%; left: 25%;" src="./playbg.png"/></a>
+                    <a href="https://bit.ly/gdsccu-woc-yt-about" target="_blank"><img style="position: absolute; top: 35%; left: 40%;" src="./play.png"/></a>
+                </div>
             </div>
             <hr class="CUWOC-DIV" style="margin: 0 80px; margin-top: 35px; height: 0.5px; background: black;" />
             <div class="CUWOC-DIV" style="margin: 46px 80px 0px;">
@@ -95,14 +101,14 @@
                     Pre-register today, and refer 10 friends to avail early mentorship and extra benfits, including help
                     with your proposal and early community bonding. Fill the form and start contributing.
                 </p>
-                <button
-                    style="padding: 11px 26px; background: #4285F4; color: white; border: none; border-radius: 8px; margin-top: 17px;">Pre-register</button>
+                <a href="https://bit.ly/gdsccu-woc-preregister" target="_blank"><button
+                    style="padding: 11px 26px; background: #4285F4; color: white; border: none; border-radius: 8px; margin-top: 17px;">Pre-register</button></a>
             </div>
         </section>
         <section style="max-width: 716px; margin: auto; background: #1F2124;">
             <div style="padding: 0px 80px; display: flex; align-items: center; justify-content: space-between; padding: 35px 40px 28px;">
                 <div>
-                    <img src="https://raw.githubusercontent.com/GDSC-Chandigarh-University/Winter-of-Code/cd09fe5dd25bb4cc5410aae0dfc6916c30b730ed/images/WOC-logo.svg"/>
+                    <a href="https://woc.gdsccu.tech" target="_blank"><img src="https://raw.githubusercontent.com/GDSC-Chandigarh-University/Winter-of-Code/cd09fe5dd25bb4cc5410aae0dfc6916c30b730ed/images/WOC-logo.svg"/></a>
                 </div>
                 <div>
                     <a href="https://twitter.com/gdsc_cu" target = "_blank"><img class="CUWOC-footer-img" style="margin-left: 30px; width: 20px;" src="https://raw.githubusercontent.com/GDSC-Chandigarh-University/Winter-of-Code/7f2e73b46160b6f2462a83d811d6b644f1ecf902/images/twitter.svg"/></a>
